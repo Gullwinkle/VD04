@@ -4,7 +4,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    context = {
+        'link': 'Подробнее'
+    }
+    return render_template('index.html', **context)
 
 
 @app.route('/blog/')
