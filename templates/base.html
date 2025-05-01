@@ -43,6 +43,11 @@
                       </li>
                       <li class="nav-item">
                         <a class="nav-link
+                            {% if request.path.startswith('/about') %}active{%endif%}"
+                            href="/about/">О нас</a>
+                      </li>                      
+                      <li class="nav-item">
+                        <a class="nav-link
                             {% if request.path.startswith('/contacts') %}active{%endif%}"
                             href="/contacts/">Контакты</a>
                       </li>

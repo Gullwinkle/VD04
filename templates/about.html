@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    О нас
+{% endblock %}
+
+{% block content %}
+<!-- Основной контент -->
+    <main class="container mb-5">
+        <!-- Герой-секция -->
+        <section class="about-header text-center rounded-3 mb-5">
+            <div class="container py-5">
+                <h1 class="display-4 fw-bold">Ателье "Кутюр"</h1>
+                <p class="lead">Искусство индивидуального пошива с 2010 года</p>
+            </div>
+        </section>
+
+        <!-- О компании -->
+        <section class="mb-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="mb-4">Наша история</h2>
+                    <p>Ателье "Кутюр" было основано в 2010 году мастером Еленой Смирновой с целью создания места, где каждый клиент может получить одежду, идеально соответствующую его индивидуальности и потребностям.</p>
+                    <p>За 13 лет работы мы превратились из небольшой мастерской в одно из самых востребованных ателье Перми, сохранив при этом индивидуальный подход к каждому клиенту.</p>
+                    <p>Наша философия - это сочетание традиционных техник шитья с современными тенденциями моды, что позволяет создавать по-настоящему уникальные вещи.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1476&q=80" class="img-fluid rounded" alt="Наше ателье">
+                </div>
+            </div>
+        </section>
+
+        <!-- Наши преимущества -->
+        <section class="mb-5 py-4 bg-light rounded-3">
+            <h2 class="text-center mb-5">Почему выбирают нас</h2>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <div class="feature-icon">
+                        <i class="bi bi-award"></i>
+                    </div>
+                    <h3>Качество</h3>
+                    <p>Используем только лучшие ткани и материалы от проверенных поставщиков. Гарантия на все работы - 1 год.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-icon">
+                        <i class="bi bi-person-heart"></i>
+                    </div>
+                    <h3>Индивидуальный подход</h3>
+                    <p>Каждый клиент получает персонального менеджера и возможность участвовать в процессе создания одежды.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-icon">
+                        <i class="bi bi-clock-history"></i>
+                    </div>
+                    <h3>Скорость</h3>
+                    <p>Срочный пошив за 3 дня. Средний срок выполнения заказа - 7-10 дней.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Наши клиенты -->
+        <section class="mb-5 bg-light p-4 rounded-3">
+            <h2 class="text-center mb-4">Нам доверяют</h2>
+            <div class="row text-center">
+                <div class="col">
+                    <p>За годы работы мы создали более 5000 индивидуальных изделий и обслужили более 2000 постоянных клиентов.</p>
+                    <p>Наши клиенты - это люди, которые ценят качество, индивидуальность и внимание к деталям.</p>
+                    <a href="/contacts/" class="btn btn-primary mt-3">Стать нашим клиентом</a>
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock %}
